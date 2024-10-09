@@ -15,7 +15,7 @@ export const main = async (ext: External, mockInput?: MockInput) => {
     const currentTag = mockInput?.currentTag ?? getActionInput(ext, 'current-tag', '');
 
     // Get the most recent tag associated with the commit on the main branch
-    const latestTag =  currentTag || await getLatestDefaultBranchTag(ext);
+    const latestTag = currentTag || (await getLatestDefaultBranchTag(ext));
     if (!latestTag) throw new Error("No tags found on the repo's default branch in the last 100 commits!");
 
     // Resolve the version number based on the labels and the most recent tag

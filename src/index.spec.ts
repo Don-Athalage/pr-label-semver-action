@@ -27,6 +27,7 @@ const GoodInput1: MockInput = {
   defaultBump: 'minor',
   prereleasePrefix: 'beta.',
   labelPrefix: 'release:',
+  currentTag: 'v0.0.0',
 };
 
 const GoodInput2: MockInput = {
@@ -51,6 +52,7 @@ const GoodInput2: MockInput = {
   defaultBump: 'minor',
   prereleasePrefix: 'beta.',
   labelPrefix: 'release:',
+  currentTag: 'v0.0.0',
 };
 
 const GoodInput3: MockInput = {
@@ -75,6 +77,7 @@ const GoodInput3: MockInput = {
   defaultBump: 'minor',
   prereleasePrefix: 'beta.',
   labelPrefix: 'release:',
+  currentTag: 'v0.0.0',
 };
 
 const GoodInput4: MockInput = {
@@ -99,6 +102,7 @@ const GoodInput4: MockInput = {
   defaultBump: 'minor',
   prereleasePrefix: 'beta.',
   labelPrefix: 'release:',
+  currentTag: 'v0.0.0',
 };
 
 const BadInput1: MockInput = {
@@ -123,6 +127,7 @@ const BadInput1: MockInput = {
   defaultBump: 'minor',
   prereleasePrefix: 'beta.',
   labelPrefix: 'release:',
+  currentTag: 'v0.0.0',
 };
 
 describe('Action Main', () => {
