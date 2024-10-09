@@ -18,7 +18,7 @@ inputs:
     required: false
     description: "GitHub token to use for operations."
     default: ${{ github.token }}
-  current-tag: false
+  current-tag:
     required: false
     description: "Supply the Current latest tag"
 runs:
