@@ -12,7 +12,7 @@ export const main = async (ext: External, mockInput?: MockInput) => {
     const defaultBump = mockInput?.defaultBump ?? (getActionInput(ext, 'default-bump', 'patch') as Semver);
     const prereleasePrefix = mockInput?.prereleasePrefix ?? getActionInput(ext, 'prerelease-prefix', 'rc.');
     const labelPrefix = mockInput?.labelPrefix ?? getActionInput(ext, 'label-prefix', '');
-    const currentTag = mockInput?.latestTag ?? getActionInput(ext, 'current-tag', '');
+    const currentTag = mockInput?.currentTag ?? getActionInput(ext, 'current-tag', '');
 
     // Get the most recent tag associated with the commit on the main branch
     const latestTag =  currentTag || await getLatestDefaultBranchTag(ext);
