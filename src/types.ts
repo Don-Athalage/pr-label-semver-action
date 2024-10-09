@@ -8,4 +8,5 @@ export type MockInput = {
   defaultBump: Semver;
   prereleasePrefix: string;
   labelPrefix: string;
+  currentTag: string
 };
