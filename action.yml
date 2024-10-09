@@ -18,6 +18,9 @@ inputs:
     required: false
     description: "GitHub token to use for operations."
     default: ${{ github.token }}
+  current-tag: false
+    required: false
+    description: "Supply the Current latest tag"
 runs:
   using: "node20"
   main: "dist/index.js"
